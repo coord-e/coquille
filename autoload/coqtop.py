@@ -206,8 +206,7 @@ def send_cmd(cmd):
 def restart_coq(*args):
     global coqtop, root_state, state_id
     if coqtop: kill_coqtop()
-    options = [ 'coqtop'
-              , '-ideslave'
+    options = [ 'coqidetop'
               , '-main-channel'
               , 'stdfds'
               , '-async-proofs'
